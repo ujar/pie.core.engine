@@ -339,9 +339,9 @@ public class Engine implements IFutureTaskListener, IEngine {
                 ec.printStackTrace();
             }
             
-//            if (listenerMap.containsKey(worker.getId())) {
-//                listenerMap.remove(worker.getId());//create API how many adapter has been serverd and how many has cancelled
-//            }
+            if (listenerMap.containsKey(worker.getId())) {
+                listenerMap.remove(worker.getId());//create API how many adapter has been serverd and how many has cancelled
+            }
         }
 
     }
