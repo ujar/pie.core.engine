@@ -20,7 +20,7 @@ public interface IEngine {
 	 */
 	public void stop();
 	/**
-	 * 
+	 *  This method is for adding new tasks in the core engine
 	 * @param worker
 	 * @param taskFinishListener
 	 */
