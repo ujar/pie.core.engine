@@ -1,7 +1,7 @@
 package pie.core.engine;
 
 import pie.core.engine.security.Sms;
-import pie.core.engine.util.IsoapLogger;
+import pie.core.engine.util.PieLogger;
 import pie.core.engine.validation.IsoapExcetion;
 import pie.core.engine.validation.Guard;
 import pie.core.engine.worker.IWorkListener;
@@ -29,7 +29,7 @@ import java.util.concurrent.ScheduledFuture;
  */
 public class Engine implements IFutureTaskListener, IEngine {
 
-    private static final IsoapLogger LOGGER = IsoapLogger.getLogger(Engine.class);
+    private static final PieLogger LOGGER = PieLogger.getLogger(Engine.class);
     private ScheduledExecutorService executor = null;
     private static boolean stopRequested = false;
     private ScheduledExecutorService wakerHandler = null;
