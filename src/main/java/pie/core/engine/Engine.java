@@ -15,6 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
@@ -332,13 +333,13 @@ public class Engine implements IFutureTaskListener, IEngine {
             engineEventDispatcher.notifyAnonymousEvent(engineListener,
                     worker.getId() + " is not a daemon or not scheduled to keep alive.so it is shutdown now ");
             workEventDispatcher.notifyWorkIsShutDown(worker, listenerMap);
-            
-             try {
+
+            try {
                 workEventDispatcher.notifyWorkIsDone(worker, listenerMap);
             } catch (Exception ec) {
                 ec.printStackTrace();
             }
-            
+
             if (listenerMap.containsKey(worker.getId())) {
                 listenerMap.remove(worker.getId());//create API how many adapter has been serverd and how many has cancelled
             }

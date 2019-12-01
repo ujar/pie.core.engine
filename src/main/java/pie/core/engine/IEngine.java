@@ -1,10 +1,9 @@
 package pie.core.engine;
 
-import pie.core.engine.IConfiguration;
-import pie.core.engine.Event;
 import pie.core.engine.worker.IWorkListener;
 import pie.core.engine.worker.IWorker;
 import java.util.Set;
+
 
 
 /**
@@ -59,6 +58,8 @@ public interface IEngine {
         
         public boolean isStop(IWorker<Event> worker);
         public boolean isStop(Class adapterId);
+
+    
 	
 	
 	
