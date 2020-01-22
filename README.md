@@ -1,5 +1,5 @@
 # pie.core.engine
-Pie core engine is a Java based  threading library for multi taskig work. The engine is built on top of  java.util.concurrent library. There
+Pie core engine is a Java based  threading library for multi taskig inside web or desktop appliction. The engine is built on top of  java.util.concurrent library. There
 are some added benefit of using Pie core engine such as follows
 1. Dynamically add and remove mutiple task
 2. Each task progress is updated by attaching listener/event with each task
