@@ -16,7 +16,7 @@ public class PieLogger {
 		this.clazz = clazz;
 		LOGGER = LogFactory.getLog(clazz);
 	}
-	
+
 	public static PieLogger getLogger(Class clazz){
 		return new PieLogger(clazz);
 	}
