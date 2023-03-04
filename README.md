@@ -1,18 +1,16 @@
-# pie.core.engine
-Pie core engine is a Java based  threading library for multitaskig execution inside web or desktop appliction. The engine is built on top of  java.util.concurrent library. There
-are some added benefit of using Pie core engine such as follows
-1. Dynamically add and remove mutiple task in the core execution thread
-2. Each task progress is updated by attaching listener/event with each task
-3. Schedule mutiple tasks based on specific time(by Date, day, hour...so on)
-4. API friendly or less code implementation by the coder
+Pie core engine is a Java-based threading library for multitasking execution inside web or desktop applications. The engine is built on top of the java.util.concurrent library, providing added benefits such as:
 
-To test Pie core engine, please check out the Client application   https://github.com/ujar/pie.core.engine.test.ui
-Client application is developed to demonstrate following usages of pie core engine
+    Dynamically adding and removing multiple tasks in the core execution thread
+    Updating each task's progress by attaching a listener/event to each task
+    Scheduling multiple tasks based on specific time (by date, day, hour, etc.)
+    Easy-to-use API for less code implementation by the coder
 
-1. Start/Stop Pie core engine
-2. Create a Task/Adapter with scheduled time or without scheduled time
-3. Push the Task/Adapter into the Pie core engine
-4. Add or remove task from the pie core engine 
-5. Add event/listener with each task in order to get the progress update
+To test Pie core engine, please check out the client application at https://github.com/ujar/pie.core.engine.test.ui. This client application is developed to demonstrate the following usages of Pie core engine:
 
-It has been developed as a personal effort in order to  easily run/execute multiple work in a java based application.
+    Starting/stopping Pie core engine
+    Creating a task/adapter with scheduled time or without scheduled time
+    Pushing the task/adapter into the Pie core engine
+    Adding or removing tasks from the Pie core engine
+    Adding an event/listener with each task to get progress updates
+
+Pie core engine was developed as a personal effort to easily run/execute multiple tasks in a Java-based application.
